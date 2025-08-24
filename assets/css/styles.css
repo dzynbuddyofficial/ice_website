@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --ice-red: #E53935;
+  --ice-yellow: #FFB300;
+  --ice-black: #212121;
+  --ice-white: #FFF8E1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--ice-white);
+  color: var(--ice-black);
+}
+
+/* Nav links underline from center */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: var(--ice-red);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: var(--ice-red);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile nav links */
+#mobile-menu a {
+  text-align: center;
+  transition: all 0.3s ease;           
+}
+
+#mobile-menu a:hover {
+  color: var(--ice-red);
+}
+
+
+
+/* Hamburger animation */
+.menu-open span:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 5px);
+}
+.menu-open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -5px);
+}
+
+/* Testimonials - One Slide */
+.ts-slider {
+  position: relative;
+  overflow: hidden;
+}
+.ts-slide { width: 100%; }
+.ts-dot {
+  width: 5px; height: 5px; border-radius: 9999px;
+  background: #e0e0e0; transition: transform .2s ease, background .2s ease;
+}
+.ts-dot.active { background: var(--ice-red); transform: scale(1.2); }
