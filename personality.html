@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Personality - ICE</title>
+  <title>ICE - Indian Chicken Express</title>
+  <meta name="description" content="Indian Chicken Express (ICE) serves Odisha’s favorite crispy chicken, juicy burgers, and cheesy pizzas in Cuttack & Bhubaneswar. Order online via Zomato & Swiggy.">
+  <link rel="canonical" href="https://iceindianchickenexpress.com/">
+  <meta property="og:title" content="Indian Chicken Express | Odisha’s Crispiest Chicken">
+  <meta property="og:description" content="Taste the crunch! Crispy chicken, juicy burgers & cheesy pizzas. Order from ICE today.">
+  <meta property="og:image" content="https://iceindianchickenexpress.com/images/og-banner.png">
+  <meta property="og:url" content="https://iceindianchickenexpress.com/">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
@@ -29,6 +37,8 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="menu.html" class="nav-link">Menu</a></li>
         <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="franchise.html" class="nav-link">Franchise</a></li>
         <li><a href="stores.html" class="nav-link">Stores</a></li>
         <li><a href="personality.html" class="nav-link">Personality</a></li>
         </ul>
@@ -42,13 +52,40 @@
     <a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a>
     <a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a>
     <a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a>
+    <a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a>
+    <a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a>
     <a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a>
     <a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a>
     </div>
 
-    <div class="relative z-10 container mx-auto my-40 px-6 md:px-12 flex flex-col">
-      <h1 class="text-4xl font-bold text-center mt-12 text-black">WORK IN PROGRESS</h1>
-    </div>
+
+    <main class="pt-24 pb-16 md:pt-32 flex-grow bg-[var(--ice-red)]">
+      <!-- ================= PERSONALITY SECTION ================= -->
+      <!-- Hero -->
+      <section class="container mx-auto text-center mt-28 px-6 pb-32 md:pb-32">
+        <h1 class="text-4xl font-bold mb-4 text-white">Discover Your ICE Personality</h1>
+        <p class="mb-6 text-lg text-white">Take this short quiz and find out which dish matches your vibe today!</p>
+        <button id="startQuiz" class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-6 py-3 rounded-lg font-bold hover:bg-[var(--ice-black)] hover:text-white transition">Start Quiz</button>
+      </section>
+
+      <!-- Quiz Container -->
+      <section id="quizSection" class="hidden container mx-auto text-center mt-12 px-6 pb-32 md:pb-32">
+        <div id="questionContainer" class="bg-white p-6 rounded-xl shadow-lg max-w-xl mx-auto">
+          <h2 id="question" class="text-2xl font-bold mb-6"></h2>
+          <div id="options" class="grid grid-cols-1 gap-4"></div>
+        </div>
+      </section>
+
+      <!-- Result -->
+      <section id="resultSection" class="hidden container mx-auto text-center mt-12 px-6 pb-36 md:pb-32">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-xl mx-auto">
+          <h2 id="resultTitle" class="text-3xl font-bold mb-4"></h2>
+          <img id="resultImage" src="" alt="Result Food" class="w-48 mx-auto mb-4 rounded-lg shadow-lg">
+          <p id="resultDescription" class="text-gray-700 mb-6"></p>
+          <a href="menu.html" class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-6 py-3 rounded-lg font-bold hover:bg-[var(--ice-black)] hover:text-white transition">Order Now</a>
+        </div>
+      </section>
+    </main>
 
 
     <!-- ================= Footer ================= -->
@@ -71,6 +108,8 @@
             <li><a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a></li>
             <li><a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a></li>
             <li><a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a></li>
+            <li><a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a></li>
+            <li><a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a></li>
             <li><a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a></li>
             <li><a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a></li>
           </ul>
@@ -105,7 +144,7 @@
       </div>
 
       <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
-        © 2025 New Indian Chicken Express. All rights reserved.
+        © 2025 Indian Chicken Express. All rights reserved.
       </div>
     </footer>
 

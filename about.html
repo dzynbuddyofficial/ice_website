@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - ICE</title>
+  <title>ICE - Indian Chicken Express</title>
+  <meta name="description" content="Indian Chicken Express (ICE) serves Odisha’s favorite crispy chicken, juicy burgers, and cheesy pizzas in Cuttack & Bhubaneswar. Order online via Zomato & Swiggy.">
+  <link rel="canonical" href="https://iceindianchickenexpress.com/">
+  <meta property="og:title" content="Indian Chicken Express | Odisha’s Crispiest Chicken">
+  <meta property="og:description" content="Taste the crunch! Crispy chicken, juicy burgers & cheesy pizzas. Order from ICE today.">
+  <meta property="og:image" content="https://iceindianchickenexpress.com/images/og-banner.png">
+  <meta property="og:url" content="https://iceindianchickenexpress.com/">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
@@ -29,6 +37,8 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="menu.html" class="nav-link">Menu</a></li>
         <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="franchise.html" class="nav-link">Franchise</a></li>
         <li><a href="stores.html" class="nav-link">Stores</a></li>
         <li><a href="personality.html" class="nav-link">Personality</a></li>
         </ul>
@@ -42,12 +52,84 @@
     <a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a>
     <a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a>
     <a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a>
+    <a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a>
+    <a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a>
     <a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a>
     <a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a>
     </div>
 
-    <div class="relative z-10 container mx-auto my-40 px-6 md:px-12 flex flex-col">
-      <h1 class="text-4xl font-bold text-center mt-12 text-black">WORK IN PROGRESS</h1>
+    <!-- ================= ABOUT US SECTION ================= -->
+    <!-- Hero Section -->
+    <section class="h-[60vh] bg-cover bg-center flex items-center justify-center text-center mt-16"
+            style="background-image: url('assets/images/about-hero.png')">
+      <div class="bg-black bg-opacity-50 p-8 md:p-12 rounded-xl" data-aos="zoom-in">
+        <h1 class="text-4xl md:text-6xl font-bold text-[var(--ice-yellow)]">Our Story</h1>
+        <p class="text-lg md:text-xl text-white/75 mt-4">
+          From Cuttack to Bhubaneswar, serving happiness one bite at a time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Journey -->
+    <div class="bg-[var(--ice-black)] py-6">
+      <section class="container mx-auto px-6 md:px-12 my-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <img src="assets/images/dargah.jpeg" alt="Our Story" class="rounded-xl shadow-lg" data-aos="fade-right">
+          <div data-aos="fade-left">
+            <h2 class="text-3xl font-bold text-[var(--ice-red)] mb-4">How It All Began</h2>
+            <p class="text-white/75 leading-relaxed">
+              Indian Chicken Express (ICE) was born in Cuttack with one mission — 
+              to serve the crispiest, juiciest chicken and the cheesiest pizzas at 
+              affordable prices. What started as a small kitchen quickly became a 
+              favorite for families, friends, and foodies across Odisha.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- What Makes Us Special -->
+    <section class="bg-[var(--ice-red)] py-16">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+        <h2 class="text-3xl font-bold text-white mb-12" data-aos="fade-up">What Makes ICE Special?</h2>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="p-6 bg-white rounded-xl shadow-md hover:translate-y-[-10px] transition-duration-300ms" data-aos="flip-left">
+            <h3 class="font-semibold mb-2">Crispy Chicken</h3>
+            <p class="text-gray-600 text-sm">Perfect crunch, every single time.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow-md hover:translate-y-[-10px] transition-duration-300ms" data-aos="flip-left" data-aos-delay="100">
+            <h3 class="font-semibold mb-2">Delicious Burgers</h3>
+            <p class="text-gray-600 text-sm">Freshly made with loads of love.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow-md hover:translate-y-[-10px] transition-duration-300ms" data-aos="flip-left" data-aos-delay="200">
+            <h3 class="font-semibold mb-2">Local Love</h3>
+            <p class="text-gray-600 text-sm">Serving Odisha with pride & flavor.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow-md hover:translate-y-[-10px] transition-duration-300ms" data-aos="flip-left" data-aos-delay="300">
+            <h3 class="font-semibold mb-2">Pocket Friendly</h3>
+            <p class="text-gray-600 text-sm">Good food doesn’t have to be expensive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <div class="bg-[var(--ice-yellow)] py-6">
+      <section class="container mx-auto px-6 md:px-12 my-20 text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-[var(--ice-black)] mb-6">Our Vision & Mission</h2>
+        <p class="text-black max-w-3xl mx-auto leading-relaxed">
+          Our vision is to make ICE a household name across India, while staying true to 
+          our roots in Odisha. We believe in fresh ingredients, bold flavors, and 
+          creating moments of joy with every bite. Our mission is simple — to keep 
+          serving happiness on every plate.
+        </p>
+        <!-- CTA -->
+        <div class="text-center my-16" data-aos="zoom-in">
+          <a href="menu.html" class="bg-[var(--ice-red)] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition">
+            Explore Our Menu
+          </a>
+        </div>
+      </section>
     </div>
 
 
@@ -71,6 +153,8 @@
             <li><a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a></li>
             <li><a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a></li>
             <li><a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a></li>
+            <li><a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a></li>
+            <li><a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a></li>
             <li><a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a></li>
             <li><a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a></li>
           </ul>
@@ -93,6 +177,7 @@
           </div>
         </div>
 
+
         <!-- Social -->
         <div>
           <h3 class="font-semibold mb-4">Follow Us</h3>
@@ -105,10 +190,19 @@
       </div>
 
       <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
-        © 2025 New Indian Chicken Express. All rights reserved.
+        © 2025 Indian Chicken Express. All rights reserved.
       </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
 </body>
 </html>

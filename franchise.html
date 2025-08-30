@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Franchise - ICE</title>
+  <meta name="description" content="Indian Chicken Express (ICE) serves Odisha’s favorite crispy chicken, juicy burgers, and cheesy pizzas in Cuttack & Bhubaneswar. Order online via Zomato & Swiggy.">
+  <link rel="canonical" href="https://iceindianchickenexpress.com/">
+  <meta property="og:title" content="Indian Chicken Express | Odisha’s Crispiest Chicken">
+  <meta property="og:description" content="Taste the crunch! Crispy chicken, juicy burgers & cheesy pizzas. Order from ICE today.">
+  <meta property="og:image" content="https://iceindianchickenexpress.com/images/og-banner.png">
+  <meta property="og:url" content="https://iceindianchickenexpress.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+</head>
+<body>
+
+    <!-- ================= Navbar ================= -->
+    <header class="fixed top-0 left-0 w-full bg-[var(--ice-yellow)] shadow-md z-[10000]">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+        <a href="index.html" class="text-4xl font-bold text-black">ICE</a>
+
+        <!-- Hamburger / X -->
+        <button id="menu-toggle" class="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none z-[10001]">
+        <span class="block h-1 bg-black rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-black rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-black rounded transition-all duration-300"></span>
+        </button>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex gap-6 font-medium">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="franchise.html" class="nav-link">Franchise</a></li>
+        <li><a href="stores.html" class="nav-link">Stores</a></li>
+        <li><a href="personality.html" class="nav-link">Personality</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Fullscreen Mobile Menu -->
+    <div id="mobile-menu" 
+        class="fixed inset-0 bg-[var(--ice-yellow)] hidden flex flex-col justify-center items-center gap-8
+                text-black text-3xl font-bold z-[9000]">
+    <a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a>
+    <a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a>
+    <a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a>
+    <a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a>
+    <a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a>
+    <a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a>
+    <a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a>
+    </div>
+
+
+      <!-- Why Franchise With ICE -->
+      <div class="bg-gray-50 py-20">
+        <section class="container mx-auto px-6 md:px-12 py-20">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image -->
+            <div data-aos="fade-right">
+              <img src="assets/images/franchise-team.jpg" alt="ICE Franchise" class="rounded-xl shadow-lg">
+            </div>
+            
+            <!-- Text Content -->
+            <div data-aos="fade-left">
+              <h2 class="text-3xl font-bold mb-6 text-[var(--ice-red)]">Why Franchise With ICE?</h2>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <span class="text-2xl font-bold text-[var(--ice-red)] mr-4">01</span>
+                  <p class="text-gray-700"><strong>Trusted Brand:</strong> Odisha’s favorite for crispy chicken, burgers, and pizzas.</p>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-2xl font-bold text-[var(--ice-red)] mr-4">02</span>
+                  <p class="text-gray-700"><strong>Strong Support:</strong> Complete training, supply chain, and marketing assistance.</p>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-2xl font-bold text-[var(--ice-red)] mr-4">03</span>
+                  <p class="text-gray-700"><strong>Low Investment:</strong> Affordable entry with fast break-even.</p>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-2xl font-bold text-[var(--ice-red)] mr-4">04</span>
+                  <p class="text-gray-700"><strong>High ROI:</strong> Loyal customer base ensures quick returns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+
+
+      <!-- Stats Section -->
+      <div class="bg-[var(--ice-red)] py-20">
+        <!-- Stats Section -->
+        <section class="mx-auto px-6 md:px-12 py-20 bg-white w-1/4 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-center mb-12 text-[var(--ice-red)]">
+            Our Impact in Numbers
+          </h2>
+
+          <div class="space-y-12 text-center max-w-lg mx-auto">
+            <div>
+              <h3 class="stat-number text-5xl font-bold text-[var(--ice-red)] mb-2" data-target="25000">0</h3>
+              <p class="text-gray-700">Customers served monthly</p>
+            </div>
+            <div>
+              <h3 class="stat-number text-5xl font-bold text-[var(--ice-red)] mb-2" data-target="6">0</h3>
+              <p class="text-gray-700">Outlets across Odisha</p>
+            </div>
+            <div>
+              <h3 class="stat-number text-5xl font-bold text-[var(--ice-red)] mb-2" data-target="70">0</h3>
+              <p class="text-gray-700">Repeat customer rate (%)</p>
+            </div>
+            <div>
+              <h3 class="stat-number text-5xl font-bold text-[var(--ice-red)] mb-2" data-target="18">0</h3>
+              <p class="text-gray-700">Average ROI recovery (months)</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <!-- Steps -->
+      <section class="bg-white py-20">
+        <h2 class="text-3xl font-bold text-center mb-12 text-[var(--ice-red)]">How It Works</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10 max-w-4xl mx-auto">
+          <div class="text-center">
+            <div class="bg-[var(--ice-yellow)] w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+            <p class="mt-4 font-semibold">Apply</p>
+          </div>
+          <div class="w-10 h-1 bg-white hidden md:block"></div>
+          <div class="text-center">
+            <div class="bg-[var(--ice-yellow)] w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+            <p class="mt-4 font-semibold">Review</p>
+          </div>
+          <div class="w-10 h-1 bg-white hidden md:block"></div>
+          <div class="text-center">
+            <div class="bg-[var(--ice-yellow)] w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+            <p class="mt-4 font-semibold">Agreement</p>
+          </div>
+          <div class="w-10 h-1 bg-white hidden md:block"></div>
+          <div class="text-center">
+            <div class="bg-[var(--ice-yellow)] w-16 h-16 rounded-full flex items-center justify-center font-bold text-lg">4</div>
+            <p class="mt-4 font-semibold">Launch</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application Form -->
+      <div class="bg-white py-6">
+        <section class="container mx-auto px-6 md:px-12 mt-20 mb-20">
+          <h2 class="text-3xl font-bold text-center mb-10 text-[var(--ice-red)]">Apply Here</h2>
+          <form name="franchise" method="POST" data-netlify="true" class="max-w-2xl mx-auto bg-gray-100 p-8 rounded-xl shadow-lg space-y-6">
+              <input type="hidden" name="form-name" value="franchise">
+
+              <input type="text" name="name" placeholder="Full Name" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
+              <input type="email" name="email" placeholder="Email" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
+              <input type="tel" name="phone" placeholder="Phone Number" required class="w-full border border-gray-300 rounded-lg px-4 py-3">
+              <input type="text" name="location" placeholder="Preferred Franchise Location" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+              <input type="number" name="investment" placeholder="Estimated Investment Capacity (INR)" class="w-full border border-gray-300 rounded-lg px-4 py-3">
+              <textarea name="message" placeholder="Message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-3"></textarea>
+              <button type="submit" class="w-full bg-[var(--ice-red)] text-white py-3 rounded-lg font-bold hover:bg-[var(--ice-black)] transition">
+                  Submit Application
+              </button>
+          </form>
+
+          <p id="franchiseMessage" class="text-center mt-4 text-green-600 hidden">Application submitted successfully!</p>
+        </section>
+      </div>
+      
+
+      
+      <!-- Contact CTA -->
+      <section class="bg-[var(--ice-yellow)] text-[var(--ice-black)] py-12 text-center">
+        <h3 class="text-xl font-semibold">Still have questions?</h3>
+        <p class="mt-2">indianchickenexpress@gmail.com | +91 77358 74751</p>
+      </section>
+
+
+    <!-- ================= Footer ================= -->
+    <footer class="bg-[var(--ice-black)] text-white py-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4 text-[var(--ice-red)]">ICE</h2>
+          <p class="text-sm text-gray-300">
+            Indian Chicken Express brings you crispy chicken, juicy burgers, and cheesy pizzas —
+            Odisha’s favorite fast-food brand.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a></li>
+            <li><a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a></li>
+            <li><a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a></li>
+            <li><a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a></li>
+            <li><a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a></li>
+            <li><a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a></li>
+            <li><a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="font-semibold mb-4">Contact</h3>
+          <p class="text-gray-300 text-sm">Cuttack & Bhubaneswar, Odisha</p>
+          <p class="text-gray-300 text-sm">+91 77358 74751</p>
+          <p class="text-gray-300 text-sm">+91 98275 27995</p>
+          <p class="text-gray-300 text-sm">+91 98533 36379</p>
+          <p class="text-gray-300 text-sm">indianchickenexpress@gmail.com</p>
+          <br>
+          <!-- Open Time -->
+          <div>
+            <h3 class="font-semibold mb-4">Open Time</h3>
+            <p class="text-gray-300 text-sm">Monday to Sunday</p>
+            <p class="text-gray-300 text-sm">10:00 AM - 11:00 PM</p>
+          </div>
+        </div>
+
+
+        <!-- Social -->
+        <div>
+          <h3 class="font-semibold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/icerestaurant" target="_blank" class="hover:text-[var(--ice-yellow)] text-xl"><i class="fab fa-facebook"><img src="/assets/images/facebook.png" alt="Facebook" class="w-8 h-8 hover:transform hover:scale-105"></i></a>
+            <a href="https://www.instagram.com/ice.indianchickenexpress/" target="_blank" class="hover:text-[var(--ice-yellow)] text-xl"><i class="fab fa-instagram"><img src="/assets/images/instagram.png" alt="Instagram" class="w-8 h-8 hover:transform hover:scale-105"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
+        © 2025 Indian Chicken Express. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".stat-number");
+
+        const animateCounter = (el) => {
+          const target = +el.getAttribute("data-target");
+          let current = 0;
+          const increment = target / 100; // speed (higher divisor = slower)
+
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              el.textContent = Math.floor(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              el.textContent = target + (el.dataset.target.includes("000") ? "+" : "");
+            }
+          };
+          updateCounter();
+        };
+
+        // Trigger when in viewport
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              obs.unobserve(entry.target); // Run only once
+            }
+          });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => {
+          observer.observe(counter);
+        });
+      });
+    </script>
+
+    <script>
+      document.querySelector("form[name='franchise']").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const form = e.target;
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+        .then(() => {
+            document.getElementById("franchiseMessage").classList.remove("hidden");
+            form.reset();
+        })
+        .catch((error) => alert("❌ Failed to send. Please try again."));
+      });
+    </script>
+
+</body>
+</html>

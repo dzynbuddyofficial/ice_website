@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stores - ICE</title>
+  <title>ICE - Indian Chicken Express</title>
+  <meta name="description" content="Indian Chicken Express (ICE) serves Odisha’s favorite crispy chicken, juicy burgers, and cheesy pizzas in Cuttack & Bhubaneswar. Order online via Zomato & Swiggy.">
+  <link rel="canonical" href="https://iceindianchickenexpress.com/">
+  <meta property="og:title" content="Indian Chicken Express | Odisha’s Crispiest Chicken">
+  <meta property="og:description" content="Taste the crunch! Crispy chicken, juicy burgers & cheesy pizzas. Order from ICE today.">
+  <meta property="og:image" content="https://iceindianchickenexpress.com/images/og-banner.png">
+  <meta property="og:url" content="https://iceindianchickenexpress.com/">
+  <meta name="twitter:card" content="summary_large_image">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
@@ -29,6 +37,8 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="menu.html" class="nav-link">Menu</a></li>
         <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="career.html" class="nav-link">Career</a></li>
+        <li><a href="franchise.html" class="nav-link">Franchise</a></li>
         <li><a href="stores.html" class="nav-link">Stores</a></li>
         <li><a href="personality.html" class="nav-link">Personality</a></li>
         </ul>
@@ -42,13 +52,141 @@
     <a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a>
     <a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a>
     <a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a>
+    <a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a>
+    <a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a>
     <a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a>
     <a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a>
     </div>
 
-    <div class="relative z-10 container mx-auto my-40 px-6 md:px-12 flex flex-col">
-      <h1 class="text-4xl font-bold text-center mt-12 text-black">WORK IN PROGRESS</h1>
-    </div>
+
+      <!-- ================= STORES SECTION ================= -->
+      <!-- Hero -->
+      <section class="h-[50vh] bg-cover bg-center flex items-center justify-center mt-16"
+              style="background-image: url('assets/images/store-hero.png')">
+        <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center" data-aos="zoom-in">
+          <h1 class="text-4xl md:text-6xl font-bold text-white">Our Stores</h1>
+          <p class="text-lg text-gray-200 mt-3">Find your nearest ICE outlet and enjoy the crunch!</p>
+        </div>
+      </section>
+
+      <!-- Stores Section -->
+      <section class="relative bg-[var(--ice-red)] py-6 overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 my-20 relative z-10">
+
+          <!-- Background Pizza Left -->
+          <img src="assets/images/pizza-stores.png" 
+              alt="Pizza Left" 
+              class="absolute left-3/4 bottom-1/2 -translate-x-1/2 -translate-y-1/2
+                      opacity-70 w-[200px] sm:w-[300px] md:w-[500px] lg:w-[650px] xl:w-[800px] 
+                      animate-spin-slow -z-10">
+
+          <!-- Background Pizza Right -->
+          <img src="assets/images/pizza-store-2.png" 
+              alt="Pizza Right" 
+              class="absolute right-3/4 top-1/2 -translate-x-1/2 -translate-y-1/2
+                      opacity-70 w-[200px] sm:w-[300px] md:w-[500px] lg:w-[650px] xl:w-[800px] 
+                      animate-spin-slow -z-10">
+
+
+          <h2 class="text-3xl font-bold text-center text-[var(--ice-red)] mb-12" data-aos="fade-up">
+            Where to Find Us
+          </h2>
+
+          <!-- Store Grid -->
+          <div class="grid md:grid-cols-3 gap-10 relative z-10">
+            <!-- Store Card -->
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/dargah.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">N.S.C.B. Arcade</h3>
+                <p class="text-sm text-gray-600 mt-2">Dargah Bazar, Cuttack</p>
+                <p class="text-sm text-gray-600">+91 81448 80575</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/clgsqr.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Rex Plaza</h3>
+                <p class="text-sm text-gray-600 mt-2">College Square, Cuttack</p>
+                <p class="text-sm text-gray-600">+91 81448 82134</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/patia.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">OEU Tower</h3>
+                <p class="text-sm text-gray-600 mt-2">Patia, Bhubaneswar</p>
+                <p class="text-sm text-gray-600">+91 77358 74751</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/khandagiri.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">ITER, Khandagiri</h3>
+                <p class="text-sm text-gray-600 mt-2">College Road, Bhubaneswar</p>
+                <p class="text-sm text-gray-600">+91 98275 27995</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/cda.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">CDA, Sector-6</h3>
+                <p class="text-sm text-gray-600 mt-2">Near ICE-Bakers, Cuttack</p>
+                <p class="text-sm text-gray-600">+91 77499 15909</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+              <img src="assets/images/salepur.jpeg" alt="ICE Cuttack" class="w-full h-54 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-bold">College Road</h3>
+                <p class="text-sm text-gray-600 mt-2">Near Boyanika, Salipur, Cuttack</p>
+                <p class="text-sm text-gray-600">+91 91784 61366</p>
+                <p class="text-sm text-gray-600 mt-1">10 AM - 11 PM</p>
+              </div> 
+            </div>
+            
+          </div>
+
+          <!-- Order Now -->
+          <div class="text-center my-16 relative z-10" data-aos="zoom-in">
+            <a href="#" target="_blank" 
+              id="orderNowZomato" 
+              class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-8 py-4 rounded-full font-bold text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition">
+              Order on Zomato
+            </a>
+
+            <a href="#" target="_blank"
+              id="orderNowSwiggy" 
+              class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-8 py-4 rounded-full font-bold text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition ml-4">
+              Order on Swiggy
+            </a>
+
+            <!-- Store Choice Modal -->
+            <div id="storeChoiceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-[9999]">
+              <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
+                <h2 class="text-xl font-bold mb-4">Choose Your Store</h2>
+                <p id="modalMessage" class="mb-6 text-gray-700"></p>
+                <div id="modalButtons" class="grid gap-4"></div>
+                <button onclick="closeModal()" class="mt-6 text-sm text-gray-500 hover:underline">Cancel</button>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
 
 
     <!-- ================= Footer ================= -->
@@ -71,6 +209,8 @@
             <li><a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a></li>
             <li><a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a></li>
             <li><a href="about.html" class="hover:text-[var(--ice-yellow)]">About Us</a></li>
+            <li><a href="career.html" class="hover:text-[var(--ice-yellow)]">Career</a></li>
+            <li><a href="franchise.html" class="hover:text-[var(--ice-yellow)]">Franchise</a></li>
             <li><a href="stores.html" class="hover:text-[var(--ice-yellow)]">Stores</a></li>
             <li><a href="personality.html" class="hover:text-[var(--ice-yellow)]">Personality</a></li>
           </ul>
@@ -83,7 +223,7 @@
           <p class="text-gray-300 text-sm">+91 77358 74751</p>
           <p class="text-gray-300 text-sm">+91 98275 27995</p>
           <p class="text-gray-300 text-sm">+91 98533 36379</p>
-          <p class="text-gray-300 text-sm">indianchickenexppvtltd@gmail.com</p>
+          <p class="text-gray-300 text-sm">indianchickenexpress@gmail.com</p>
           <br>
           <!-- Open Time -->
           <div>
@@ -92,6 +232,7 @@
             <p class="text-gray-300 text-sm">10:00 AM - 11:00 PM</p>
           </div>
         </div>
+
 
         <!-- Social -->
         <div>
@@ -110,5 +251,151 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const stores = [
+        {
+          name: "Cuttack - N.S.C.B. Arcade",
+          lat: 20.467649,
+          lng: 85.868831,
+          zomato: "https://www.zomato.com/cuttack/ice-indian-chicken-express-buxi-bazaar", 
+          swiggy: "https://www.swiggy.com/city/cuttack/ice-indian-chicken-express-buxi-bazar-dargha-bazar-rest196061"
+        },
+        {
+          name: "Cuttack - Rex Plaza",
+          lat: 20.468291,
+          lng: 85.895984,
+          zomato: "https://www.zomato.com/cuttack/ice-indian-chicken-express-siba-bazaar", 
+          swiggy: "https://www.swiggy.com/city/cuttack/ice-indian-chicken-express-college-square-siba-bazaar-rest196058"
+        },
+        {
+          name: "Bhubaneswar - Khandagiri",
+          lat: 20.254630,
+          lng: 85.801726,
+          zomato: "https://www.zomato.com/bhubaneswar/ice-indian-chicken-express-jagmohan-nagar-bhubaneshwar", 
+          swiggy: "https://www.swiggy.com/city/bhubaneswar/ice-indian-chicken-express-jagamara-jagmohan-nagar-rest552498"
+        },
+        {
+          name: "Salepur - College Road",
+          lat: 20.478255,
+          lng: 86.105158,
+          zomato: "https://www.zomato.com/cuttack/indian-chicken-express-bidhyadhapur-cuttack", 
+          swiggy: "https://www.swiggy.com/city/cuttack/indian-chicken-express-salepur-college-road"
+        },
+        {
+          name: "OEU Tower - Patia - Bhubaneswar",
+          lat: 20.353740,
+          lng: 85.825629,
+          zomato: "https://www.zomato.com/bhubaneswar/ice-indian-chicken-express-patia-bhubaneshwar", 
+          swiggy: "https://www.swiggy.com/city/bhubaneswar/new-indian-chicken-express-patia-rest318085"
+        },
+        {
+          name: "Cuttack - CDA Sector-6",
+          lat: 20.473674,
+          lng: 85.841985,
+          zomato: "https://www.zomato.com/cuttack/indian-chicken-express-cda-sector-6",
+          swiggy: "https://www.swiggy.com/city/cuttack/indian-chicken-express-cda-sector-6"
+        }
+      ];
+
+      function getDistance(lat1, lng1, lat2, lng2) {
+        const R = 6371;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLng = (lng2 - lng1) * Math.PI / 180;
+        const a =
+          Math.sin(dLat/2) * Math.sin(dLat/2) +
+          Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+          Math.sin(dLng/2) * Math.sin(dLng/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        return R * c;
+      }
+
+      function findNearestStores(userLat, userLng) {
+        return stores
+          .map(store => ({
+            ...store,
+            distance: getDistance(userLat, userLng, store.lat, store.lng)
+          }))
+          .sort((a, b) => a.distance - b.distance);
+      }
+
+      function orderNow(platform) {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const userLat = position.coords.latitude;
+              const userLng = position.coords.longitude;
+
+              const sortedStores = findNearestStores(userLat, userLng);
+              const nearest = sortedStores[0];
+              const secondNearest = sortedStores[1];
+
+              console.log("📍 Your Location:", userLat, userLng);
+              console.log("✅ Nearest:", nearest.name, nearest.distance.toFixed(2), "km");
+
+              if (secondNearest && (secondNearest.distance - nearest.distance) < 2) {
+                // Show modal to let user pick
+                showStoreChoice([nearest, secondNearest], platform);
+              } else {
+                // Auto redirect
+                window.location.href = (platform === "zomato") ? nearest.zomato : nearest.swiggy;
+              }
+            },
+            (error) => {
+              console.error("Geolocation error:", error);
+              alert("Please allow location access to order from your nearest store!");
+            }
+          );
+        } else {
+          alert("Geolocation is not supported by your browser.");
+        }
+      }
+
+      function showStoreChoice(options, platform) {
+        const modal = document.getElementById("storeChoiceModal");
+        const message = document.getElementById("modalMessage");
+        const buttons = document.getElementById("modalButtons");
+
+        message.innerText = "We found multiple nearby stores. Choose one:";
+        buttons.innerHTML = "";
+
+        options.forEach(store => {
+          const btn = document.createElement("button");
+          btn.className = "bg-[var(--ice-red)] text-white px-4 py-2 rounded-lg font-bold hover:bg-[var(--ice-black)] transition";
+          btn.innerText = store.name;
+          btn.onclick = () => {
+            window.location.href = (platform === "zomato") ? store.zomato : store.swiggy;
+          };
+          buttons.appendChild(btn);
+        });
+
+        modal.classList.remove("hidden");
+      }
+
+      window.closeModal = function() {
+        document.getElementById("storeChoiceModal").classList.add("hidden");
+      };
+
+      document.getElementById("orderNowZomato").addEventListener("click", (e) => {
+        e.preventDefault();
+        orderNow("zomato");
+      });
+
+      document.getElementById("orderNowSwiggy").addEventListener("click", (e) => {
+        e.preventDefault();
+        orderNow("swiggy");
+      });
+    });
+  </script>
+
+
+
 </body>
 </html>
