@@ -171,7 +171,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -210,7 +210,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -249,7 +249,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -287,7 +287,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -326,7 +326,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -365,7 +365,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -403,7 +403,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 
@@ -431,43 +431,6 @@ body {
 .shakes-swiper .card { will-change: transform; }
 
 
-/*<!-- ================= SIDES ================= -->/
-
-/* --- Swiper/coverflow visual rules --- */
-.sides-swiper { padding: 36px 0; }
-
-/* Important: give slides a fixed reasonable width so neighbors are visible */
-.sides-swiper .swiper-slide {
-  width: 240px;                     /* desktop width for each item */
-  display: flex;
-  justify-content: center;
-  opacity: 0.65;
-  transition: transform .35s ease, opacity .35s ease;
-}
-
-/* slide image sizing */
-.sides-swiper .swiper-slide img {
-  width: 100%;
-  height: 176px;
-  object-fit: cover;
-}
-
-/* center (active) looks bigger and sharper */
-.sides-swiper .swiper-slide-active {
-  transform: scale(1.12);
-  opacity: 1;
-  z-index: 10;
-}
-
-/* slightly bigger slides on wider screens */
-@media (min-width: 1024px) {
-  .sides-swiper .swiper-slide { width: 280px; }
-  .sides-swiper .swiper-slide img { height: 180px; }
-}
-
-/* Prevent parent containers from clipping shadows */
-.sides-swiper .card { will-change: transform; }
-
 /*<!-- ================= DIPS ================= -->/
 
 /* --- Swiper/coverflow visual rules --- */
@@ -478,7 +441,7 @@ body {
   width: 240px;                     /* desktop width for each item */
   display: flex;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.25;
   transition: transform .35s ease, opacity .35s ease;
 }
 

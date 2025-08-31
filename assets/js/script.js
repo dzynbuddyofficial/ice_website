@@ -71,7 +71,7 @@ function initSwiper(selector, prevBtn, nextBtn) {
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
-    spaceBetween: 0,
+    spaceBetween: -35,
     loop: false,
     grabCursor: true,
     speed: 420,
@@ -97,7 +97,6 @@ window.addEventListener('load', () => {
   initSwiper('.meals-swiper', '.meals-prev', '.meals-next');
   initSwiper('.drinks-swiper', '.drinks-prev', '.drinks-next');
   initSwiper('.shakes-swiper', '.shakes-prev', '.shakes-next');
-  initSwiper('.sides-swiper', '.sides-prev', '.sides-next');
   initSwiper('.dips-swiper', '.dips-prev', '.dips-next');
 });
 
@@ -136,22 +135,26 @@ const results = {
   burger: {
     title: "🍔 Burger Buddy",
     img: "assets/images/burger.jpg",
-    desc: "You’re all about fun and flavor! Loaded, juicy, and perfect for every chill vibe."
+    desc: "You’re all about fun and flavor! Loaded, juicy, and perfect for every chill vibe.",
+    menu: "Cheesy Burger, Spicy Chicken Burger, Veggie Burger"
   },
   pizza: {
     title: "🍕 Pizza Soul",
     img: "assets/images/pizza.jpg",
-    desc: "Warm, cheesy, and perfect for sharing. You’re the heart of every family table."
+    desc: "Warm, cheesy, and perfect for sharing. You’re the heart of every family table.",
+    menu: "Margherita Pizza, Pepperoni Pizza, Veggie Supreme Pizza"
   },
   chicken: {
     title: "🍗 Crispy Chicken Hero",
     img: "assets/images/chicken.jpg",
-    desc: "Bold and energetic, you bring the crunch wherever you go!"
+    desc: "Bold and energetic, you bring the crunch wherever you go!",
+    menu: "Crispy Chicken Burger, Spicy Chicken Wings, Chicken Nuggets"
   },
   snacks: {
     title: "🍟 Snack Explorer",
     img: "assets/images/snacks.jpg",
-    desc: "Always trying new combos, you’re adventurous and love mixing it up."
+    desc: "Always trying new combos, you’re adventurous and love mixing it up.",
+    menu: "Loaded Nachos, Spicy Fries, Chicken Popcorn"
   }
 };
 
@@ -168,6 +171,7 @@ const resultSection = document.getElementById("resultSection");
 const resultTitle = document.getElementById("resultTitle");
 const resultImage = document.getElementById("resultImage");
 const resultDescription = document.getElementById("resultDescription");
+const menuItems = document.getElementById("menuItems");
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -215,14 +219,8 @@ function showResult() {
   resultTitle.textContent = res.title;
   resultImage.src = res.img;
   resultDescription.textContent = res.desc;
+  menuItems.textContent = res.menu;
 }
-
-gsap.from("#questionContainer", {
-  y: -50,
-  opacity: 0,
-  duration: 0.8,
-  ease: "power3.out"
-});
 
 
 
