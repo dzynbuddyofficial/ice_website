@@ -17,12 +17,25 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Indian Chicken Express",
+    "url": "https://iceindianchickenexpress.com",
+    "logo": "https://iceindianchickenexpress.com/assets/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/icerestaurant",
+      "https://www.instagram.com/ice.indianchickenexpress/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
     <!-- ================= Navbar ================= -->
-    <header class="fixed top-0 left-0 w-full bg-[var(--ice-yellow)] shadow-md z-[10000]">
-    <nav class="container mx-auto flex justify-between items-center p-4">
+    <header class="fixed top-0 left-0 w-full bg-[var(--ice-yellow)] z-[10000]">
+    <nav class="container mx-auto flex justify-between p-4">
         <a href="index.html" class="text-4xl font-bold text-black">ICE</a>
 
         <!-- Hamburger / X -->
@@ -47,7 +60,7 @@
 
     <!-- Fullscreen Mobile Menu -->
     <div id="mobile-menu" 
-        class="fixed inset-0 bg-[var(--ice-yellow)] hidden flex flex-col justify-center items-center gap-8
+        class="fixed inset-0 bg-[var(--ice-yellow)] hidden flex flex-co gap-8
                 text-black text-3xl font-bold z-[9000]">
     <a href="index.html" class="hover:text-[var(--ice-yellow)]">Home</a>
     <a href="menu.html" class="hover:text-[var(--ice-yellow)]">Menu</a>
@@ -69,160 +82,171 @@
           <div class="relative">
             <div class="swiper burger-swiper">
               <div class="swiper-wrapper">
+                                
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger1.jpg" alt="Veg Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Burger</h3>
-                      <p class="text-sm text-gray-600">₹89</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger1.jpg" alt="Paneer Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Burger</h3>
-                      <p class="text-sm text-gray-600">₹119</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger1.jpg" alt="Veg Salad Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Salad Burger</h3>
-                      <p class="text-sm text-gray-600">₹29</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger1.jpg" alt="Aloo Tikki Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Aloo Tikki Burger</h3>
-                      <p class="text-sm text-gray-600">₹49</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Mexican Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mexican_burger.png" alt="Mexican Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Mexican Burger</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Grilled Jumbo Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/grilled_jumbo_burger.png" alt="Grilled Jumbo Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Grilled Jumbo Burger</h3>
-                      <p class="text-sm text-gray-600">₹149</p>
+                      <p class="text-sm text-white">₹149</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Grilled Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/grilled_burger.png" alt="Grilled Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Grilled Burger</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Crunchy Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/crunchy_burger.png" alt="Crunchy Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Crunchy Burger</h3>
-                      <p class="text-sm text-gray-600">₹89</p>
+                      <p class="text-sm text-white">₹89</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Crunchy Hotdog" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/crunchy_hotdog.png" alt="Crunchy Hotdog" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Crunchy Hotdog</h3>
-                      <p class="text-sm text-gray-600">₹169</p>
+                      <p class="text-sm text-white">₹169</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="ICE Special Jumbo Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/spl_jumbo_burger.png" alt="ICE Special Jumbo Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">ICE Special Jumbo Burger</h3>
-                      <p class="text-sm text-gray-600">₹139</p>
+                      <p class="text-sm text-white">₹139</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Fish Burger" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/fish_burger.png" alt="Fish Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Fish Burger</h3>
-                      <p class="text-sm text-gray-600">₹119</p>
+                      <p class="text-sm text-white">₹119</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Veg Wrap" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Wrap</h3>
-                      <p class="text-sm text-gray-600">₹129</p>
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/crunchy_burger.png" alt="Chicken Snacker" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Snacker</h3>
+                      <p class="text-sm text-white">₹59</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Paneer Wrap" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Wrap</h3>
-                      <p class="text-sm text-gray-600">₹149</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Chicken Wrap" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_wrap.png" alt="Chicken Wrap" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Wrap</h3>
-                      <p class="text-sm text-gray-600">₹149</p>
+                      <p class="text-sm text-white">₹149</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/burger2.jpg" alt="Fish Wrap" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/fish_wrap.png" alt="Fish Wrap" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Fish Wrap</h3>
-                      <p class="text-sm text-gray-600">₹169</p>
+                      <p class="text-sm text-white">₹169</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_burger.png" alt="Veg Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Burger</h3>
+                      <p class="text-sm text-white">₹89</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/paneer_burger.png" alt="Paneer Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Burger</h3>
+                      <p class="text-sm text-white">₹119</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_salad_burger.png" alt="Veg Salad Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Salad Burger</h3>
+                      <p class="text-sm text-white">₹29</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/aloo_tikki_burger.png" alt="Aloo Tikki Burger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Aloo Tikki Burger</h3>
+                      <p class="text-sm text-white">₹49</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_wrap.png" alt="Veg Wrap" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Wrap</h3>
+                      <p class="text-sm text-white">₹129</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/paneer_wrap.png" alt="Paneer Wrap" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Wrap</h3>
+                      <p class="text-sm text-white">₹149</p>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <button class="burger-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="burger-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="burger-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="burger-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -237,79 +261,79 @@
             <div class="swiper pizza-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza1.jpg" alt="Veg Delight Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_delight_pizza.png" alt="Veg Delight Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Veg Delight Pizza</h3>
-                      <p class="text-sm text-gray-600">₹259</p>
+                      <p class="text-sm text-white">₹259</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Paneer Masti Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/paneer_masti_pizza.png" alt="Paneer Masti Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Masti Pizza</h3>
-                      <p class="text-sm text-gray-600">₹279</p>
+                      <p class="text-sm text-white">₹279</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Sweet Corn Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/sweetcorn_pizza.png" alt="Sweet Corn Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Sweet Corn Pizza</h3>
-                      <p class="text-sm text-gray-600">₹259</p>
+                      <p class="text-sm text-white">₹259</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Chicken Maharaja Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_maharaja_pizza.png" alt="Chicken Maharaja Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Maharaja Pizza</h3>
-                      <p class="text-sm text-gray-600">₹299</p>
+                      <p class="text-sm text-white">₹299</p>
                     </div>
                   </div>
                 </div>
                 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Chicken Dopyaza Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_dopyaza_pizza.png" alt="Chicken Dopyaza Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Dopyaza Pizza</h3>
-                      <p class="text-sm text-gray-600">₹299</p>
+                      <p class="text-sm text-white">₹299</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Chicken Keema Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_keema_pizza.png" alt="Chicken Keema Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Keema Pizza</h3>
-                      <p class="text-sm text-gray-600">₹349</p>
+                      <p class="text-sm text-white">₹349</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/pizza2.jpg" alt="Chicken Popcorn Pizza" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_popcorn_pizza.png" alt="Chicken Popcorn Pizza" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Popcorn Pizza</h3>
-                      <p class="text-sm text-gray-600">₹349</p>
+                      <p class="text-sm text-white">₹349</p>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <button class="pizza-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="pizza-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="pizza-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="pizza-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -324,149 +348,149 @@
             <div class="swiper crispy-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken1.jpg" alt="Hot & Crispy Chicken" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/hot&crispy.png" alt="Hot & Crispy Chicken" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Hot & Crispy Chicken</h3>
-                      <p class="text-sm text-gray-600">6pcs ₹449, 9pcs ₹659, 12pcs ₹879</p>
+                      <p class="text-sm text-white">6pcs ₹449, 9pcs ₹659, 12pcs ₹879</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Kurkure Chicken Momo" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/kurkure_non_veg_momo.png" alt="Kurkure Chicken Momo" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Kurkure Chicken Momo</h3>
-                      <p class="text-sm text-gray-600">6pcs ₹129</p>
+                      <p class="text-sm text-white">6pcs ₹129</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Popcorn" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_popcorn.png" alt="Chicken Popcorn" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Popcorn</h3>
-                      <p class="text-sm text-gray-600">Regular ₹79, Medium ₹149, Large ₹219</p>
+                      <p class="text-sm text-white">Regular ₹79, Medium ₹149, Large ₹219</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Fish Popcorn" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/fish_popcorn.png" alt="Fish Popcorn" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Fish Popcorn</h3>
-                      <p class="text-sm text-gray-600">Regular ₹189, Medium ₹359, Large ₹529</p>
+                      <p class="text-sm text-white">Regular ₹189, Medium ₹359, Large ₹529</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Prawn Popcorn" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/prawn_popcorn.png" alt="Prawn Popcorn" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Prawn Popcorn</h3>
-                      <p class="text-sm text-gray-600">Regular ₹129, Medium ₹239, Large ₹389</p>
+                      <p class="text-sm text-white">Regular ₹129, Medium ₹239, Large ₹389</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Strips" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_strips.png" alt="Chicken Strips" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Strips</h3>
-                      <p class="text-sm text-gray-600">6pcs ₹219, 12pcs ₹399</p>
+                      <p class="text-sm text-white">6pcs ₹219, 12pcs ₹399</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Fish Strips" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/fish_strips.png" alt="Fish Strips" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Fish Strips</h3>
-                      <p class="text-sm text-gray-600">3pcs ₹159, 6pcs ₹299</p>
+                      <p class="text-sm text-white">3pcs ₹159, 6pcs ₹299</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Fries" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_fries.png" alt="Chicken Fries" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Fries</h3>
-                      <p class="text-sm text-gray-600">Regular ₹119, Medium ₹189, Large ₹299</p>
+                      <p class="text-sm text-white">Regular ₹119, Medium ₹189, Large ₹299</p>
                     </div>
                   </div>
                 </div>
                 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Nuggets" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_nuggets.png" alt="Chicken Nuggets" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Nuggets</h3>
-                      <p class="text-sm text-gray-600">₹129</p>
+                      <p class="text-sm text-white">₹129</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Lollipop" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_lollipop.png" alt="Chicken Lollipop" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Lollipop</h3>
-                      <p class="text-sm text-gray-600">₹199</p>
+                      <p class="text-sm text-white">₹199</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Hot Wings" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_wings.png" alt="Chicken Hot Wings" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Hot Wings</h3>
-                      <p class="text-sm text-gray-600">₹179</p>
+                      <p class="text-sm text-white">₹179</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Chicken Bone Sticks" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_bone_stick.png" alt="Chicken Bone Sticks" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Bone Sticks</h3>
-                      <p class="text-sm text-gray-600">₹149</p>
+                      <p class="text-sm text-white">₹149</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Grilled Strips" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/grilled_strips.png" alt="Grilled Strips" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Grilled Strips</h3>
-                      <p class="text-sm text-gray-600">₹229</p>
+                      <p class="text-sm text-white">₹229</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken2.jpg" alt="Grilled Lollipop" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/grilled_lollipop.png" alt="Grilled Lollipop" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Grilled Lollipop</h3>
-                      <p class="text-sm text-gray-600">₹229</p>
+                      <p class="text-sm text-white">₹229</p>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <button class="crispy-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="crispy-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="crispy-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="crispy-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -480,49 +504,89 @@
             <div class="swiper veg-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken1.jpg" alt="Kurkure Veg Momo" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/french_fries.png" alt="French Fries" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">French Fries</h3>
+                      <p class="text-sm text-white">Regular ₹99, Large ₹149</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/peri_peri_french_fries.png" alt="PeriPeri French Fries" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">PeriPeri French Fries</h3>
+                      <p class="text-sm text-white">Regular ₹129, Large ₹179</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/kurkure_veg_momo.png" alt="Kurkure Veg Momo" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Kurkure Veg Momo</h3>
-                      <p class="text-sm text-gray-600">6pcs ₹99</p>
+                      <p class="text-sm text-white">6pcs ₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken1.jpg" alt="Potato Wedges" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/potato_wedges.png" alt="Potato Wedges" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Potato Wedges</h3>
-                      <p class="text-sm text-gray-600">₹79</p>
+                      <p class="text-sm text-white">₹79</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken1.jpg" alt="Veg Nuggets" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_nuggets.png" alt="Veg Nuggets" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Veg Nuggets</h3>
-                      <p class="text-sm text-gray-600">₹89</p>
+                      <p class="text-sm text-white">₹89</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/chicken1.jpg" alt="Paneer Shots" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_finger.png" alt="Veg Finger" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Finger</h3>
+                      <p class="text-sm text-white">₹99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/paneer_shots.png" alt="Paneer Shots" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-veg)]">Paneer Shots</h3>
-                      <p class="text-sm text-gray-600">6pcs ₹99, 12pcs ₹179</p>
+                      <p class="text-sm text-white">6pcs ₹99, 12pcs ₹179</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/veg_burger.png" alt="Veg Snacker" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Snacker</h3>
+                      <p class="text-sm text-white">₹59</p>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <button class="veg-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="veg-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="veg-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="veg-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -538,49 +602,49 @@
               <div class="swiper-wrapper">
                 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/combo1.jpg" alt="Strips Meal (4pcs Strips + Fries + Pepsi)" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/strips_meal.png" alt="Strips Meal (4pcs Strips + Fries + Pepsi)" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Strips Meal (4pcs Strips + Fries + Pepsi)</h3>
-                      <p class="text-sm text-gray-600">₹259</p>
+                      <p class="text-sm text-white">₹259</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/combo1.jpg" alt="Dinner Meal (3pcs Chicken + Fries + Pepsi)" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/dinner_meal.png" alt="Dinner Meal (3pcs Chicken + Fries + Pepsi)" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Dinner Meal (3pcs Chicken + Fries + Pepsi)</h3>
-                      <p class="text-sm text-gray-600">₹369</p>
+                      <p class="text-sm text-white">₹369</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/combo1.jpg" alt="Chicken Meal (1pcs Chicken + Fries + Pepsi)" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chicken_meal.png" alt="Chicken Meal (1pcs Chicken + Fries + Pepsi)" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Meal (1pcs Chicken + Fries + Pepsi)</h3>
-                      <p class="text-sm text-gray-600">₹199</p>
+                      <p class="text-sm text-white">₹199</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/combo1.jpg" alt="Special Meal (4pcs Chicken, 4pcs Lollipop, 4pcs Wings, 4pcs Strips, 1 Popcorn(R))" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/special_meal.png" alt="Special Meal (4pcs Chicken, 4pcs Lollipop, 4pcs Wings, 4pcs Strips, 1 Popcorn(R))" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-non-veg)]">Special Meal (4pcs Chicken, 4pcs Lollipop, 4pcs Wings, 4pcs Strips, 1 Popcorn(R))</h3>
-                      <p class="text-sm text-gray-600">₹849</p>
+                      <p class="text-sm text-white">₹849</p>
                     </div>
                   </div>
                 </div>
 
               </div>
             </div>
-            <button class="meals-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="meals-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="meals-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="meals-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -596,139 +660,149 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Green Apple" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/green_apple_mojito.png" alt="Green Apple" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Green Apple</h3>
-                      <p class="text-sm text-gray-600">₹109</p>
+                      <p class="text-sm text-white">₹109</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Blue Curacao" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/blue_curacao_mojito.png" alt="Blue Curacao" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Blue Curacao</h3>
-                      <p class="text-sm text-gray-600">₹109</p>
+                      <p class="text-sm text-white">₹109</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Mint Lime" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mint_lime_mojito.png" alt="Mint Lime" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Mint Lime</h3>
-                      <p class="text-sm text-gray-600">₹109</p>
+                      <p class="text-sm text-white">₹109</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Spicy Mango" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/spicy_mango.png" alt="Spicy Mango" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Spicy Mango</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Cucumber Mojito" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/cucumber_mojito.png" alt="Cucumber Mojito" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Cucumber Mojito</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Kiwi Mojito" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/kiwi_mojito.png" alt="Kiwi Mojito" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Kiwi Mojito</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Strawberry" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/strawberry_mojito.png" alt="Strawberry" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Strawberry</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Raspberry" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/raspberry_mojito.png" alt="Raspberry" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Raspberry</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Watermelon" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/watermelon_mojito.png" alt="Watermelon" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Watermelon</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Lemonade" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/lemonade.png" alt="Lemonade" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Lemonade</h3>
-                      <p class="text-sm text-gray-600">₹69</p>
+                      <p class="text-sm text-white">₹69</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Paan Mojito" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/paan_mojito.png" alt="Paan Mojito" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Paan Mojito</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Kala Khatta" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/kala_khatta_mojito.png" alt="Kala Khatta" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Kala Khatta</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Pepsi, 7UP, Dew" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/pepsi.png" alt="Pepsi, 7UP, Dew" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Pepsi, 7UP, Dew</h3>
-                      <p class="text-sm text-gray-600">Relgular ₹39, Large ₹59, Float ₹79</p>
+                      <p class="text-sm text-white">Relgular ₹39, Large ₹59, Float ₹79</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/pepsi_float.png" alt="Pepsi Float" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
+                      <h3 class="font-semibold text-[var(--ice-drinks)]">Pepsi Float</h3>
+                      <p class="text-sm text-white">₹59</p>
                     </div>
                   </div>
                 </div>
                 
               </div>
             </div>
-            <button class="drinks-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="drinks-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="drinks-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="drinks-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -742,135 +816,69 @@
             <div class="swiper shakes-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Chocolate Shake" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/Chocolate_shake.png" alt="Chocolate Shake" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Chocolate Shake</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Strawberry Shake" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/Strawberry_shake.png" alt="Strawberry Shake" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Strawberry Shake</h3>
-                      <p class="text-sm text-gray-600">₹99</p>
+                      <p class="text-sm text-white">₹99</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Mango Shake" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mango_shake.png" alt="Mango Shake" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Mango Shake</h3>
-                      <p class="text-sm text-gray-600">₹109</p>
+                      <p class="text-sm text-white">₹109</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Oreo Shake" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/Oreo_shake.png" alt="Oreo Shake" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Oreo Shake</h3>
-                      <p class="text-sm text-gray-600">₹129</p>
+                      <p class="text-sm text-white">₹129</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Cold Coffee" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/Cold_Coffee.png" alt="Cold Coffee" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Cold Coffee</h3>
-                      <p class="text-sm text-gray-600">₹139</p>
+                      <p class="text-sm text-white">₹139</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Cafe Mocha" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/Cafe_Mocha.png" alt="Cafe Mocha" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-drinks)]">Cafe Mocha</h3>
-                      <p class="text-sm text-gray-600">₹139</p>
+                      <p class="text-sm text-white">₹139</p>
                     </div>
                   </div>
                 </div>
                 
               </div>
             </div>
-            <button class="shakes-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="shakes-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= SIDES ================= -->
-      <section class="py-6 bg-[url('assets/images/MenuBackground.png')] bg-cover bg-bottom">
-        <div class="container mx-auto px-6 my-28">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-[var(--ice-red)]">Sides</h2>
-
-          <div class="relative">
-            <div class="swiper sides-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="French Fries" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">French Fries</h3>
-                      <p class="text-sm text-gray-600">Regular ₹99, Large ₹149</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="PeriPeri French Fries" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">PeriPeri French Fries</h3>
-                      <p class="text-sm text-gray-600">Regular ₹129, Large ₹179</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Pepsi Float" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-drinks)]">Pepsi Float</h3>
-                      <p class="text-sm text-gray-600">₹59</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Veg Snacker" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-veg)]">Veg Snacker</h3>
-                      <p class="text-sm text-gray-600">₹59</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Chicken Snacker" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
-                      <h3 class="font-semibold text-[var(--ice-non-veg)]">Chicken Snacker</h3>
-                      <p class="text-sm text-gray-600">₹59</p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <button class="sides-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="sides-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="shakes-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="shakes-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -884,79 +892,79 @@
             <div class="swiper dips-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Mayo Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mayo_dip.png" alt="Mayo Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Mayo Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Mexican Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mexican_dip.png" alt="Mexican Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Mexican Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Chilli Garlic Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/chilli_garlic_dip.png" alt="Chilli Garlic Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Chilli Garlic Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Sweet Chilli Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/sweet_chilli_dip.png" alt="Sweet Chilli Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Sweet Chilli Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Mint Mayo Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/mint_mayo_dip.png" alt="Mint Mayo Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Mint Mayo Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Thousand Island Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/thousand_island_dip.png" alt="Thousand Island Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Thousand Island Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="card bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src="assets/images/drink1.jpg" alt="Schezwan Dip" class="w-full h-44 object-cover">
-                    <div class="p-4 text-center">
+                  <div class="card bg-transparent overflow-hidden">
+                    <img src="assets/images/menu/schezwan_dip.png" alt="Schezwan Dip" class="w-full h-44 object-cover">
+                    <div class="p-4 text-center w-44">
                       <h3 class="font-semibold text-[var(--ice-yellow)]">Schezwan Dip</h3>
-                      <p class="text-sm text-gray-600">₹19</p>
+                      <p class="text-sm text-white">₹19</p>
                     </div>
                   </div>
                 </div>
                 
               </div>
             </div>
-            <button class="dips-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">‹</button>
-            <button class="dips-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full shadow-md z-20">›</button>
+            <button class="dips-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">‹</button>
+            <button class="dips-next absolute right-0 top-1/2 -translate-y-1/2 bg-[var(--ice-red)] text-white w-10 h-10 rounded-full z-20">›</button>
           </div>
         </div>
       </section>
@@ -993,10 +1001,9 @@
         <div>
           <h3 class="font-semibold mb-4">Contact</h3>
           <p class="text-gray-300 text-sm">Cuttack & Bhubaneswar, Odisha</p>
-          <p class="text-gray-300 text-sm">+91 77358 74751</p>
-          <p class="text-gray-300 text-sm">+91 98275 27995</p>
-          <p class="text-gray-300 text-sm">+91 98533 36379</p>
-          <p class="text-gray-300 text-sm">indianchickenexpress@gmail.com</p>
+          <p class="text-gray-300 text-sm">+91 98531 88527</p>
+          <p class="text-gray-300 text-sm">+91 99382 03283</p>
+          <p class="text-gray-300 text-sm">indianchickenexppvtltd@gmail.com</p>
           <br>
           <!-- Open Time -->
           <div>
