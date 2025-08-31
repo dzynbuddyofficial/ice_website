@@ -199,24 +199,7 @@
         © 2025 Indian Chicken Express. All rights reserved.
       </div>
     </footer>
-    
-    <script>
-        document.querySelector("form[name='career']").addEventListener("submit", function(e) {
-        e.preventDefault();
-        const form = e.target;
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(new FormData(form)).toString()
-        })
-        .then(() => {
-            document.getElementById("formMessage").classList.remove("hidden");
-            form.reset();
-        })
-        .catch((error) => alert("❌ Failed to send. Please try again."));
-        });
-    </script>
 
 </body>
+
 </html>
