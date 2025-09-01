@@ -134,27 +134,27 @@ const quizData = [
 const results = {
   burger: {
     title: "🍔 Burger Buddy",
-    img: "assets/images/burger.jpg",
+    img: "assets/images/menu/burgerExp.png",
     desc: "You’re all about fun and flavor! Loaded, juicy, and perfect for every chill vibe.",
-    menu: "Cheesy Burger, Spicy Chicken Burger, Veggie Burger"
+    menu: "Crispy Burger, ICE Special Jumbo Burger, Peri Peri Fries, Blue Caracao"
   },
   pizza: {
     title: "🍕 Pizza Soul",
-    img: "assets/images/pizza.jpg",
+    img: "assets/images/menu/pizzaExp.png",
     desc: "Warm, cheesy, and perfect for sharing. You’re the heart of every family table.",
-    menu: "Margherita Pizza, Pepperoni Pizza, Veggie Supreme Pizza"
+    menu: "Chicken Maharaja Pizza, Paneer Masti Pizza, French Fries, Mint Lime"
   },
   chicken: {
     title: "🍗 Crispy Chicken Hero",
-    img: "assets/images/chicken.jpg",
+    img: "assets/images/menu/crispyExp.png",
     desc: "Bold and energetic, you bring the crunch wherever you go!",
-    menu: "Crispy Chicken Burger, Spicy Chicken Wings, Chicken Nuggets"
+    menu: "Chicken Hot Wings, Hot & Crispy Chicken, French Fries, Green Apple"
   },
   snacks: {
     title: "🍟 Snack Explorer",
-    img: "assets/images/snacks.jpg",
+    img: "assets/images/menu/snacksExp.png",
     desc: "Always trying new combos, you’re adventurous and love mixing it up.",
-    menu: "Loaded Nachos, Spicy Fries, Chicken Popcorn"
+    menu: "Chicken Popcorn Pizza, Peri Peri Fries, Chicken Popcorn, Spicy Mango"
   }
 };
 
