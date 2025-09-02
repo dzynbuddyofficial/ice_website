@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iceindianchickenexpress.com/sitemap.xml
