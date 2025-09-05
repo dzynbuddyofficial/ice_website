@@ -247,30 +247,35 @@
         Order your favorites online now and taste the crunch that Cuttack & Bhubaneswar love.
       </p>
       
-      <div class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center px-4">
-        <a href="#" target="_blank" 
-              id="orderNowZomato" 
-              class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-8 py-4 rounded-full font-bold text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition">
-              Order on Zomato
-            </a>
-
-            <a href="#" target="_blank"
-              id="orderNowSwiggy" 
-              class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-8 py-4 rounded-full font-bold text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition ml-4">
-              Order on Swiggy
-            </a>
-
-            <!-- Store Choice Modal -->
-            <div id="storeChoiceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-[9999]">
-              <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center">
-                <h2 class="text-xl font-bold mb-4">Choose Your Store</h2>
-                <p id="modalMessage" class="mb-6 text-gray-700"></p>
-                <div id="modalButtons" class="grid gap-4"></div>
-                <button onclick="closeModal()" class="mt-6 text-sm text-gray-500 hover:underline">Cancel</button>
-              </div>
-            </div>
+      <!-- Order Now -->
+      <div class="text-center my-12 sm:my-16 relative z-10" data-aos="zoom-in">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+          <a href="#"
+            target="_blank"
+            id="orderNowZomato"
+            class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition w-full sm:w-auto text-center">
+            Order on Zomato
+          </a>
+      
+          <a href="#"
+            target="_blank"
+            id="orderNowSwiggy"
+            class="bg-[var(--ice-yellow)] text-[var(--ice-black)] px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-[var(--ice-black)] hover:text-[var(--ice-yellow)] transition w-full sm:w-auto text-center">
+            Order on Swiggy
+          </a>
+        </div>
+      
+        <!-- Store Choice Modal -->
+        <div id="storeChoiceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-[9999]">
+          <div class="bg-white rounded-lg shadow-lg p-6 max-w-md w-full text-center mx-4 sm:mx-0">
+            <h2 class="text-lg sm:text-xl font-bold mb-4">Choose Your Store</h2>
+            <p id="modalMessage" class="mb-6 text-gray-700 text-sm sm:text-base"></p>
+            <div id="modalButtons" class="grid gap-3 sm:gap-4"></div>
+            <button onclick="closeModal()" class="mt-6 text-xs sm:text-sm text-gray-500 hover:underline">Cancel</button>
+          </div>
+        </div>
       </div>
-
+      
     </section>
 
     <!-- ================= Footer ================= -->
